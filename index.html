@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <title>Phono Demo</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img src="./assets/img/logo.webp" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse flex-grow-0 gap-4"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link activee" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Android</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Accsesoris</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Memory & Storge</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Pages
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">About</a></li>
+                <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                <li><a class="dropdown-item" href="#">Fla,g</a></li>
+              </ul>
+            </li>
+            <ul class="d-flex align-items-center justify-content-center">
+              <li
+                class="d-flex align-items-center justify-content-center me-3 ms-3"
+              >
+                <a href="#"><i class="fa-solid fa-user"></i></a>
+              </li>
+              <li class="d-flex align-items-center justify-content-center me-3">
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+              </li>
+              <li class="d-flex align-items-center justify-content-center me-3">
+                <a href="#"
+                  ><i class="fa-solid fa-magnifying-glass Serche"></i
+                ></a>
+              </li>
+            </ul>
+          </ul>
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"></button>
+            <div id="myDropdown" class="dropdown-content"></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+      <div class="carousel-inner mb-3">
+        <div class="carousel-item active carousel-item1 position-relative">
+          <div class="contant position-absolute text-center">
+            <h2>Zania Black Edition</h2>
+            <h1>
+              Curvy Bevel <br />
+              Dual Audio
+            </h1>
+            <div class="shop-now">
+              <button type="button" class="btn btn-outline-danger rounded-pill">
+                Shop Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item carousel-item2">
+          <div class="contant position-absolute text-center">
+            <h2 class=" ">4K Resolution</h2>
+            <h1 class="">
+              Exclusive <br />
+              Steel Frame
+            </h1>
+            <div class="shop-now">
+              <button type="button" class="btn btn-outline-danger rounded-pill">
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item carousel-item3">
+          <div class="contant position-absolute text-center">
+            <h2 class="banner__sub_heading">Delta Zertiga Processor</h2>
+            <h1 class="banner__heading h0 mb-5">
+              Full Screen <br />
+              Display
+            </h1>
+            <div class="shop-now">
+              <button type="button" class="btn btn-outline-danger rounded-pill">
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleFade"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleFade"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- <div class="foot p-2">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 box d-flex align-items-center justify-content-center">
+          <img src="./assets/img/free-deliver-icon.webp" alt="free delive" width="50px">
+          <div class="text ms-3">
+            <h4 >FREE SHIPPING</h4>
+            <p>For orders over $50</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 box d-flex align-items-center justify-content-center">
+          <img src="./assets/img/offers-icon.webp" alt=""  width="50px">
+          <div class="text ms-3">
+            <h4 >OFFICIAL DISCOUNTS</h4>
+            <p>Save Big on next product</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 box d-flex align-items-center justify-content-center">
+          <img src="./assets/img/support-icon.webp" alt=""  width="50px">
+          <div class="text ms-3">
+            <h4>24/7 HELPLINE</h4>
+            <p>Care till the end</p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div class="ESSENTIAL pt-5">
+      <div class="main-heder text-center">
+        <h3 class="fw-b">WHAT MAKES THE ESSENTIAL DIFFERENT?</h3>
+        <p class="text-secondary">EXPERIENCE HIGH PERFORMANCE AND SECURE</p>
+      </div>
+      <div class="container">
+        <div class="row mt-5 mb-5">
+          <div class="col-lg-4 col-md-6 col-sm-12 box text-center">
+            <img src="./assets/img/ic1.webp" alt="" width="100px" />
+            <h4 class="h6 mt-3">PERFECT CUT</h4>
+            <h3 class="h5">DUAL CAMERA</h3>
+            <p>Tristique senectus et netus et malesuada ant reiet fames.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 box text-center">
+            <img src="./assets/img/ic2.avif" alt="" width="100px" />
+            <h4 class="h6 mt-3">PRETTY</h4>
+            <h3 class="h5">INTELLIGENT PROCESSING</h3>
+            <p>
+              Consequat ac habit amet asse felis donec et odio pellentesque
+              diam.
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 box text-center">
+            <img src="./assets/img/ic3.webp" alt="" width="100px" />
+            <h4 class="h6 mt-3">MOST POPULAR</h4>
+            <h3 class="h5">8GB DDR5 RAM</h3>
+            <p>
+              Dictum varius duis at consectetur lorem donec massa sap faucibus.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="POSSIBILITIES pt-5">
+      <div class="main-heder text-center">
+        <h3 class="fw-b">POSSIBILITIES. PERFORMANCE. POWER.</h3>
+        <p class="text-secondary">FASTER PROCESSING WITH LESS POWER</p>
+      </div>
+      <div class="container" id="idd">
+        <div class="imeg position-relative">
+          <div class="POSS"></div>
+          <img
+            src="./assets/img/POSSIBILITIES.webp"
+            alt=""
+            width="900px"
+            class="mx-auto d-block main-img w-100 img-fluid"
+          />
+          <a href="#idd" class="a1 position-absolute" onclick="clicka1()"></a>
+          <a href="#idd" class="a2 position-absolute" onclick="clicka2()"></a>
+          <a href="#idd" class="a3 position-absolute" onclick="clicka3()"></a>
+          <a href="#idd" class="a4 position-absolute" onclick="clicka4()"></a>
+          <div class="box box1 position-absolute text-center w-25">
+            <img src="./assets/img/pp1.webp" alt="" class="mb-3" />
+            <h6>SCORPION PROCESSOR</h6>
+            <p>Tristique senectus et netus et malesuada fames ac turpis.</p>
+          </div>
+          <div class="box box2 position-absolute text-center w-25">
+            <img src="./assets/img/pp2.webp" alt="" class="mb-3" />
+            <h6>DUAL SIM CARDS</h6>
+            <p>Donec ultrices tincidunt arcu non sodales neque sodales ut.</p>
+          </div>
+          <div class="box box3 position-absolute text-center w-25">
+            <img src="./assets/img/pp3.webp" alt="" class="mb-3" />
+            <h6>48 MP CAMERA</h6>
+            <p>
+              Cursus euismod quis viverra nibh cras pulvinar mattis nunc sed.
+            </p>
+          </div>
+          <div class="box box4 position-absolute text-center w-25">
+            <img src="./assets/img/pp4.png" alt="" class="mb-3" />
+            <h6>48 HRS BACKUP</h6>
+            <p>Natoque penatibus et magnis dis parturient montes nascetur.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="INNOVATIVE pt-5 pb-5">
+      <div class="main-heder text-center mb-4">
+        <h3 class="fw-b">INNOVATIVE QUALITIES & FEATURES</h3>
+        <p class="text-secondary">SHOW YOURS TO THE WORLD</p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-12">
+            <div
+              class="carde d-flex align-items-center justify-content-center gap-1 mb-5 mt-5"
+            >
+              <div class="text">
+                <h6>INTELLIGENT PROCESSOR</h6>
+                <p class="fs-6">
+                  Tellus in hac habitasse platea dictumst vestibulum rhoncus srd
+                  mana erti qeueri
+                </p>
+              </div>
+              <img src="./assets/img/in1.png" alt="" />
+            </div>
+            <div
+              class="carde d-flex align-items-center justify-content-center gap-1 mb-5"
+            >
+              <div class="text">
+                <h6>HD SURROUND AUDIO</h6>
+                <p class="fs-6">
+                  Sagittis eu volutpat odio ante ut diam quam metus
+                  dictfacilisis mauris sit am.
+                </p>
+              </div>
+              <img src="./assets/img/in2.webp" alt="" />
+            </div>
+            <div
+              class="carde d-flex align-items-center justify-content-center gap-1 mb-5"
+            >
+              <div class="text">
+                <h6>STYLISH BEVEL EDGES</h6>
+                <p class="fs-6">
+                  Dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor incidid
+                </p>
+              </div>
+              <img src="./assets/img/in3.webp" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 imge-m order-md-0">
+            <img
+              src="./assets/img/in-main.webp"
+              alt=""
+              width="380px"
+              height="550px"
+            />
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <div
+              class="carde d-flex align-items-center justify-content-center gap-1 mb-5 mt-5"
+            >
+              <img src="./assets/img/in4.webp" alt="" class="me-3" />
+              <div class="text">
+                <h6>4.0 WIFI SPECS</h6>
+                <p class="fs-6">
+                  Commodo nulla facilisi nullam vehicula ipsum a arcu sagitis
+                  ipsum sed iacus.
+                </p>
+              </div>
+            </div>
+            <div
+              class="carde d-flex align-items-center justify-content-center gap-1 mb-5"
+            >
+              <img src="./assets/img/in5.webp" alt="" class="me-3" />
+              <div class="text">
+                <h6>MULIT TASKING & THREADING</h6>
+                <p class="fs-6">
+                  Amet consectetur adipiscing velit laoreet nega id elit
+                  pellentesque habitant morbi .
+                </p>
+              </div>
+            </div>
+            <div
+              class="carde d-flex align-items-center justify-content-center gap-1 mb-5"
+            >
+              <img src="./assets/img/in6.png" alt="" class="me-3" />
+              <div class="text">
+                <h6>CLOUD STORAGE</h6>
+                <p class="fs-6">
+                  Dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor incididun
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ARRIVALS pt-5 pb-5">
+      <div class="main-heder text-center">
+        <h3 class="fw-b">NEW ARRIVALS</h3>
+        <p class="text-secondary">FIND THE PERFECT PHONE FOR YOU</p>
+      </div>
+      <div class="container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    <div class="CUSTOMERS pt-5 pb-5">
+      <div class="main-heder text-center">
+        <h3 class="fw-b see-h3">SEE WHY CUSTOMERS LOVE THE OUR MOBILES</h3>
+        <p class="text-secondary">DESIGNED TO PERFECTION</p>
+      </div>
+      <div class="container">
+        <div
+          class="row gap-4 d-flex align-items-center justify-content-between"
+        >
+          <div class="col-lg-3 col-md-12">
+            <img src="./assets/img/see-1.webp" alt="" width="600px" />
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div>
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item mb-3 bg-transparent text-light">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button
+                      class="accordion-button collapsed bg-transparent text-light"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseOne"
+                    >
+                      NEW GRADIENT COLOR FINISHES
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseOne"
+                    class="accordion-collapse collapse p-3"
+                    aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      Rierem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      official.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mb-3 bg-transparent text-light">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button
+                      class="accordion-button collapsed bg-transparent text-light"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseTwo"
+                    >
+                      FOUR-SIDED CURVED CERAMIC BODY
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseTwo"
+                    class="accordion-collapse collapse p-3"
+                    aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      official.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mb-3 bg-transparent text-light">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button
+                      class="accordion-button collapsed bg-transparent text-light"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseThree"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseThree"
+                    >
+                      4000MAH HIGH-CAPACITY BATTERY
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseThree"
+                    class="accordion-collapse collapse p-3"
+                    aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      official.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mb-3 bg-transparent text-light">
+                  <h2 class="accordion-header" id="flush-headingFour">
+                    <button
+                      class="accordion-button collapsed bg-transparent text-light"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseFour"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseFour"
+                    >
+                      FULLY HIDDEN CAMERA LENS
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseFour"
+                    class="accordion-collapse collapse p-3"
+                    aria-labelledby="flush-headingFour"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      Duis aute irure dolor in reprehenderit in voluptate velit
+                      esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui
+                      official.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="UPDATES pt-5 pb-5 text-center">
+      <div class="container">
+        <h6 class="mb-4">SUBSCRIBE NOW</h6>
+        <h1  class="mb-4">GET OUR UPDATES ALWAYS FAST</h1>
+        <h6 class="mb-5">YOUR PERSONAL DATA WILL ALWAYS BE SAFE</h6>
+        <div class="form mb-5">
+          <input type="email" class="email" />
+        </div>
+        <div class="text d-flex align-items-center justify-content-evenly mb-5 flex-wrap">
+          <span>SEARCH</span>
+          <span> HELP </span>
+          <span> INFORMATION</span>
+          <span> PRIVACY POLICY </span>
+          <span> SHIPPING DETAILS</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
